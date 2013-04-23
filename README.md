@@ -29,7 +29,7 @@ var1.b = 3;
 
 var1.mult = function(v){return v.a * v.b};
 
-var1.mult(var1);
+var1.mult(var1);// 6
 
 //create multiple collections and define variables to those collections
 
@@ -39,7 +39,7 @@ var var2 = vars1[0];
 
 var var3 = _arg('var3');
 
-var2.div(var3);
+var2.div(var3); // 2
 
 // use a method to bind a collection of variables to a function
 
@@ -47,7 +47,7 @@ var3.mult = _args._bind(var3.mult,'var1');
 
 var1.b = 4;
 
-var3.mult();
+var3.mult(); // 8
 
 //get a all variables in all collections
 
